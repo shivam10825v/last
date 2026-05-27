@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>All Crackers Shop</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#fff5e6;
+        }
+
+        header{
+            background:#ff5722;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .slider{
+            width:100%;
+            height:350px;
+            overflow:hidden;
+        }
+
+        .slider img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+        }
+
+        .products{
+            padding:40px;
+        }
+
+        .products h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#d84315;
+        }
+
+        .product-row{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .product-card{
+            width:23%;
+            background:white;
+            border-radius:10px;
+            padding:15px;
+            text-align:center;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .product-card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+            margin:10px 0;
+        }
+
+        .stars{
+            color:gold;
+            font-size:18px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+        @media(max-width:900px){
+            .product-card{
+                width:48%;
+            }
+        }
+
+        @media(max-width:600px){
+            .product-card{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎆 Crackers Shop Website 🎆</h1>
+    </header>
+
+    <nav>
+        <a href="anaar.html">Anaar</a>
+        <a href="ground-spinners.html">Ground Spinners</a>
+        <a href="loud-crackers.html">Loud Crackers</a>
+    </nav>
+
+    <section class="slider">
+        <img id="slideImage" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1200&auto=format&fit=crop" alt="">
+    </section>
+
+    <section class="products">
+        <h2>All Crackers Products</h2>
+
+        <div class="product-row">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&auto=format&fit=crop">
+                <h3>Color Anaar</h3>
+                <p class="price">₹250</p>
+                <p class="stars">★★★★★</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=600&auto=format&fit=crop">
+                <h3>Ground Spinner</h3>
+                <p class="price">₹180</p>
+                <p class="stars">★★★★☆</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=600&auto=format&fit=crop">
+                <h3>Loud Bomb</h3>
+                <p class="price">₹350</p>
+                <p class="stars">★★★★★</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=600&auto=format&fit=crop">
+                <h3>Festival Pack</h3>
+                <p class="price">₹999</p>
+                <p class="stars">★★★★★</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Crackers Shop Website</p>
+    </footer>
+
+    <script>
+        const images = [
+            "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop"
+        ];
+
+        let index = 0;
+
+        function changeSlide(){
+            index++;
+            if(index >= images.length){
+                index = 0;
+            }
+
+            document.getElementById("slideImage").src = images[index];
+        }
+
+        setInterval(changeSlide, 3000);
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anaar Crackers</title>
+
+    <style>
+        body{
+            font-family:Arial;
+            background:#fff3e0;
+            text-align:center;
+        }
+
+        h1{
+            background:#ff5722;
+            color:white;
+            padding:20px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            padding:30px;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🎇 Anaar Crackers 🎇</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&auto=format&fit=crop">
+        <h2>Red Anaar</h2>
+        <p class="price">₹200</p>
+        <p>★★★★★</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=600&auto=format&fit=crop">
+        <h2>Golden Anaar</h2>
+        <p class="price">₹300</p>
+        <p>★★★★☆</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ground Spinners</title>
+
+    <style>
+        body{
+            font-family:Arial;
+            background:#e8f5e9;
+            text-align:center;
+        }
+
+        h1{
+            background:green;
+            color:white;
+            padding:20px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            padding:30px;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🌀 Ground Spinners 🌀</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=600&auto=format&fit=crop">
+        <h2>Classic Spinner</h2>
+        <p class="price">₹150</p>
+        <p>★★★★★</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?q=80&w=600&auto=format&fit=crop">
+        <h2>Color Spinner</h2>
+        <p class="price">₹220</p>
+        <p>★★★★☆</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loud Crackers</title>
+
+    <style>
+        body{
+            font-family:Arial;
+            background:#ffebee;
+            text-align:center;
+        }
+
+        h1{
+            background:#d50000;
+            color:white;
+            padding:20px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            padding:30px;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .price{
+            color:green;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💥 Loud Crackers 💥</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=600&auto=format&fit=crop">
+        <h2>Thunder Bomb</h2>
+        <p class="price">₹400</p>
+        <p>★★★★★</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=600&auto=format&fit=crop">
+        <h2>Big Sound Cracker</h2>
+        <p class="price">₹500</p>
+        <p>★★★★☆</p>
+    </div>
+
+</div>
+
+</body>
+</html>
