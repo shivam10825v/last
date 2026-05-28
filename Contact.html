@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Anaar - Fresh Pomegranate Delight">
+
+  <title>Contact | Anaar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#fff5f5;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#b3003c,#ff4d6d);
+      color:white;
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    nav{
+      background:#800020;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd6dc;
+    }
+
+    .contact-section{
+      padding:60px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .contact-container{
+      background:white;
+      padding:40px;
+      width:100%;
+      max-width:600px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2{
+      text-align:center;
+      color:#b3003c;
+      margin-bottom:25px;
+      font-size:2rem;
+    }
+
+    .form-group{
+      margin-bottom:20px;
+    }
+
+    .form-group label{
+      display:block;
+      margin-bottom:8px;
+      font-weight:600;
+    }
+
+    .form-group input,
+    .form-group textarea{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:10px;
+      font-size:1rem;
+      outline:none;
+      transition:0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus{
+      border-color:#b3003c;
+      box-shadow:0 0 8px rgba(179,0,60,0.2);
+    }
+
+    textarea{
+      resize:none;
+      height:120px;
+    }
+
+    .btn{
+      width:100%;
+      padding:14px;
+      background:#b3003c;
+      color:white;
+      border:none;
+      border-radius:30px;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#800020;
+      transform:scale(1.02);
+    }
+
+    .contact-info{
+      text-align:center;
+      margin-top:30px;
+      color:#555;
+    }
+
+    footer{
+      background:#800020;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .contact-container{
+        padding:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Contact Anaar</h1>
+    <p>We’d love to hear from you 🍎</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Product.html">Products</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+
+  <section class="contact-section">
+
+    <div class="contact-container">
+
+      <h2>Get In Touch</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+      </form>
+
+      <div class="contact-info">
+        <p>Email: hello@anaar.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Maharashtra, India</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Anaar. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Anaar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#fff5f5;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#b3003c,#ff4d6d);
+      color:white;
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    nav{
+      background:#800020;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd6dc;
+    }
+
+    .about{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:40px;
+    }
+
+    .about img{
+      width:400px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .about-text{
+      max-width:550px;
+    }
+
+    .about-text h2{
+      color:#b3003c;
+      font-size:2.4rem;
+      margin-bottom:20px;
+    }
+
+    .about-text p{
+      margin-bottom:18px;
+      font-size:1.05rem;
+    }
+
+    .mission{
+      background:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .mission h2{
+      color:#b3003c;
+      margin-bottom:20px;
+      font-size:2.2rem;
+    }
+
+    .mission p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.05rem;
+    }
+
+    footer{
+      background:#800020;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .about{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .about img{
+        width:90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>About Anaar</h1>
+    <p>Freshness Inspired by Nature</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Products.html">Products</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+
+  <section class="about">
+
+    <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1200&auto=format&fit=crop"
+         alt="Fresh Pomegranate">
+
+    <div class="about-text">
+      <h2>Who We Are</h2>
+
+      <p>
+        Anaar is dedicated to bringing premium-quality pomegranates
+        directly from farms to your table. We believe in freshness,
+        purity, and healthy living.
+      </p>
+
+      <p>
+        Our fruits are carefully selected to ensure rich taste,
+        natural sweetness, and maximum nutritional value.
+      </p>
+
+      <p>
+        With a passion for healthy lifestyles, Anaar aims to make
+        nature’s ruby fruit available to everyone in its freshest form.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="mission">
+
+    <h2>Our Mission</h2>
+
+    <p>
+      To promote healthy living by delivering fresh, nutritious,
+      and naturally delicious pomegranates while supporting
+      sustainable farming and quality standards.
+    </p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Anaar. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
